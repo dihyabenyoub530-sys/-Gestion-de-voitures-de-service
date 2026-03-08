@@ -31,3 +31,12 @@ class Voiture:
             print("Chauffeur :", self.chauffeur.nom, self.chauffeur.prenom)
         else:
             print("Aucun chauffeur")
+def affecterVoiture(self, voiture):
+    if self.voitureService is not None:
+        print("Cet employé possède déjà une voiture")
+    elif voiture.chauffeur is not None:
+        print("Cette voiture est déjà attribuée")
+    else:
+        self.voitureService = voiture
+        voiture.chauffeur = self
+        print("Voiture affectée avec succès")
