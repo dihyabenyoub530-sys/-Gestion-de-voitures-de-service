@@ -47,3 +47,8 @@ def retirerVoiture(self):
         self.voitureService.chauffeur = None
         self.voitureService = None
         print("Voiture retirée")
+e1 = Employe("P123", "Dyhia", "Malika")
+e2 = Employe("P456", "Sara", "Lina")
+
+v1 = Voiture("AA111", 2022, "Toyota", 10000)
+v2 = Voiture("BB222", 2023, "Honda", 5000)
