@@ -40,3 +40,10 @@ def affecterVoiture(self, voiture):
         self.voitureService = voiture
         voiture.chauffeur = self
         print("Voiture affectée avec succès")
+def retirerVoiture(self):
+    if self.voitureService is None:
+        print("Aucune voiture à retirer")
+    else:
+        self.voitureService.chauffeur = None
+        self.voitureService = None
+        print("Voiture retirée")
