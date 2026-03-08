@@ -21,3 +21,13 @@ class Voiture:
         self.marque = marque
         self.kilometrage = kilometrage
         self.chauffeur = None
+    def afficherInformations(self):
+        print("Matricule :", self.matricule)
+        print("Année :", self.annee)
+        print("Marque :", self.marque)
+        print("Kilométrage :", self.kilometrage)
+
+        if self.chauffeur is not None:
+            print("Chauffeur :", self.chauffeur.nom, self.chauffeur.prenom)
+        else:
+            print("Aucun chauffeur")
